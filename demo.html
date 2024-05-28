@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+body{
+    /* background-color: rgb(255, 0, 0);  */
+    color:white;
+}
+.transparency-color{
+    background-color: rgba(0, 0, 255, .5);
+    /* background-color: #0000ff80; */
+}
+
+.gradient-bg-color-linear{
+    background:linear-gradient(to right, #1C6EA4 0%, #021522 15%, #e7e9eb 100%);
+}
+.gradient-bg-color-radial{
+    background: radial-gradient(ellipse at center, #1C6EA4 0%, #378a35 50%, #e1e408 100%);
+}
+#gradient-text{
+    background: linear-gradient(to right, #007bff 0%, #7efd62 20%);
+    background-clip: text;
+    color: transparent;
+}
+
+.gradient-text-holder{
+    background: black;
+}
+#circle-img{
+    width: 100%;
+    max-width: 300px; 
+    max-height: 200px;
+    border-radius: 50%;
+}
+.rounded-container{
+    border-radius: 5px;
+    background-color: green;
+    padding: 5px;
+    margin: 20px;
+}
+.box-shadow-container{
+    box-shadow: 5px 5px 15px 5px #000000;
+    margin:20px;
+}
+
+.shadow-text{
+    text-shadow: 2px 2px 2px rgba(218, 93, 10, 0.99);
+    color:#378a35;
+    background-color: #232323;
+}
+
+#sign-up{
+    border-radius: 5px;
+    background-color: rgba(255, 159, 243, .8);
+    box-shadow: 0px 0px 15px 0px rgba(255, 159, 243, .8);
+}
+#sign-up:hover{
+    border-radius: 5px;
+    background-color: rgba(76, 29, 70, 0.8);
+    box-shadow: 0px 0px 15px 0px rgba(76, 29, 70, 0.8);
+}
+
+button{
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {transform: scale(1);}
+    50% {transform: scale(1.05);}
+}
+
+#hover-img{
+    opacity: .8;
+    width: 100%;
+    max-width: 300px; 
+    max-height: 200px;
+}
+#hover-img:hover{
+    opacity: 1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures borders between rows are merged */
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Optional: adds a light line between rows */
+    border-right: 1px solid #ddd;
+}
+th{
+    background-color: darkblue;
+}
+
+/* Stripe every even row */
+tr:nth-child(even) {
+    background-color: #8f8f8f;
+}
+
+/* Stripe every odd row - optional if you want a different color for odd rows */
+tr:nth-child(odd) {
+    background-color: #000000;
+    color:white;
+}
+
+tr:hover {
+    background-color: #e9e9e9;
+}
+
+img.spin-img {
+    animation: rotate 10s infinite linear;
+    width: 100%;
+    max-width: 300px; 
+    max-height: 200px;
+    margin:80px;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+</style>
+<body>
+    <div class="transparency-color">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, unde similique labore magnam, ad molestias accusamus assumenda sapiente exercitationem quo quaerat amet, tenetur numquam minus! Unde modi rem quis temporibus.
+        Quod, in odio maiores nisi dignissimos dicta fugiat at beatae? Molestiae minus cum quo veniam nesciunt culpa et libero debitis modi. Tempore soluta temporibus numquam minima officia facilis deserunt fugiat!
+        Doloremque, nulla. Excepturi repellendus est quasi harum vel, alias earum minima molestiae veritatis accusamus magni blanditiis voluptatum ducimus inventore suscipit aspernatur ea recusandae ipsam esse quod possimus fugiat. Dolorem, minima.
+        Maxime obcaecati cumque aspernatur. Architecto assumenda dicta asperiores dignissimos necessitatibus incidunt sunt, excepturi, magnam perspiciatis ad dolor! Ipsum sint, illum tempora aspernatur, est veniam ab soluta, molestiae neque vero eaque.
+        Dolore minima atque similique esse veritatis! Omnis architecto recusandae atque eaque tenetur doloremque ipsam quae at veniam culpa vero dolorum dignissimos praesentium, saepe eligendi adipisci deleniti est sed inventore corrupti.
+    </div>
+    <div class="gradient-bg-color-linear">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem perspiciatis doloremque illum debitis, veniam, quia tenetur delectus adipisci, eveniet nobis quis et nisi assumenda rerum iure commodi ipsum sequi omnis!
+        Quas, enim sequi explicabo eaque eius officia consectetur eos atque iste quasi deleniti non ratione, vero omnis consequatur provident dolorum tempora ipsa nesciunt. Iste, non obcaecati earum quidem eos excepturi.
+        Nesciunt sint, beatae maxime autem atque reiciendis eum tempora ratione facilis? Architecto molestias et sequi, quia non recusandae pariatur velit! Unde commodi autem ratione provident ad rerum est natus quo.
+        Sunt doloremque amet, quam vitae libero mollitia officiis minima, nisi a totam magnam ipsum odio unde. Delectus, vitae saepe, recusandae harum animi fuga earum sunt dignissimos laboriosam repellendus minus vel.
+        Perferendis tempora corporis, nihil, aperiam saepe molestias at, velit voluptatibus ad natus inventore? Quod numquam beatae sed mollitia alias quidem, deserunt tempora distinctio facilis doloribus iste, ullam nesciunt, asperiores omnis.
+    </div>
+    <div class="gradient-bg-color-radial">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, aspernatur. Maxime dolorum rem repellendus sed! Iusto, eius sequi explicabo ipsa voluptates ea totam itaque nemo, quisquam dolorem dignissimos fugiat repellendus!
+        Magnam obcaecati enim error in iusto sunt alias, illum porro, eius nesciunt nulla dolorem voluptate similique distinctio a, voluptas necessitatibus doloremque illo laudantium! Ipsum magni repellendus laborum quia possimus rerum.
+        Quae deserunt, dolores quasi quas blanditiis officiis ad delectus saepe quam magnam asperiores sequi vel iusto labore expedita voluptate fuga ipsa est dignissimos! Autem sed impedit eligendi similique illo totam.
+        Blanditiis perferendis pariatur fuga itaque, corporis error ad dolorum excepturi eius culpa recusandae nobis. Earum explicabo necessitatibus, in sequi hic vel quam est inventore fuga amet? Cumque similique eveniet illum.
+        Magnam laborum voluptates voluptatem vero nemo amet impedit perspiciatis iusto mollitia harum nobis placeat molestias eos cum exercitationem excepturi ullam recusandae debitis corrupti praesentium laboriosam, ad doloremque! Repellat, saepe aliquam.
+    </div>
+    <div class="gradient-text-holder">
+        <h1 id="gradient-text">This is the heading with a gradient</h1>
+    </div>
+    
+    <div>
+        <img id="circle-img" src="https://res.cloudinary.com/cae67/image/upload/v1628184306/fakebook_shop/grey_shoe_jk7iuz.jpg">
+    </div>
+    <div class="rounded-container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem quisquam amet optio sunt blanditiis atque corrupti? Fuga repellendus quis dolores, repudiandae quae minus velit qui adipisci ratione harum eum ut!
+        Amet, ab. A officiis odit commodi placeat pariatur voluptas quaerat alias qui suscipit? Laudantium illum, labore molestiae eius vitae ducimus nam exercitationem adipisci nihil autem sed ipsam commodi minus repellat.
+        Accusamus distinctio est quidem et molestias illo perferendis expedita, animi maiores? Cumque aspernatur error corrupti veritatis praesentium assumenda ab commodi obcaecati atque aliquam unde voluptatum, esse, libero provident, culpa expedita.
+        Similique, deleniti distinctio eius voluptates, dolorum sed nisi quod asperiores vel illo, culpa quo facilis saepe amet! Tenetur corporis quidem, id rem iste itaque dicta, excepturi ratione aliquid quae dolor.
+        Quibusdam repellat voluptates saepe recusandae. Laborum molestias voluptates tempore nulla quae accusantium molestiae, recusandae minima voluptatibus ab, ea explicabo ut, omnis impedit. Incidunt facilis eaque sed dolor maxime, obcaecati facere.
+    </div>
+    <div class="box-shadow-container">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos vero earum fugiat quibusdam velit et est itaque dicta voluptatem, maiores commodi consequatur, consectetur repellendus quam. Sapiente vitae consequuntur dolor nemo.
+        Obcaecati reprehenderit iste quos odio explicabo aliquam quo corrupti asperiores illum repudiandae vel nam, assumenda error corporis omnis quasi nemo ipsa nihil? Iste dolore alias laudantium necessitatibus assumenda delectus ipsa!
+        Ut quae porro adipisci, beatae id qui tempora quaerat recusandae modi facilis cupiditate veritatis! A, reprehenderit non ipsa consequuntur molestias saepe voluptates, maxime aliquid totam animi possimus soluta pariatur sequi.
+        Quod perspiciatis ut mollitia impedit natus dolor distinctio iste, temporibus quam pariatur eaque, labore expedita delectus nam praesentium, assumenda doloribus quis autem! Sunt iure cum, aspernatur mollitia fugit asperiores numquam!
+        In numquam perspiciatis, temporibus vel commodi nulla laboriosam tenetur quo, similique, distinctio doloremque mollitia tempora. Possimus, libero rerum! Expedita quibusdam delectus, dolor cupiditate fuga mollitia dolore hic recusandae excepturi error!
+    </div>
+    <div>
+        <h2 class="shadow-text">This text will have a shadow</h2>
+    </div>
+    <div>
+        <button id="sign-up" type="button">Sign Up</button>
+    </div>
+    <div>
+        <img id="hover-img" src="https://res.cloudinary.com/cae67/image/upload/v1628184306/fakebook_shop/grey_shoe_jk7iuz.jpg">
+    </div>
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Weight</th>
+        </thead>
+        <tr>
+            <td>Kevin</td>
+            <td>77</td>
+            <td>320</td>
+        </tr>
+        <tr>
+            <td>Donovan</td>
+            <td>12</td>
+            <td>175</td>
+        </tr>
+    </table>
+    <img class="spin-img" src="https://res.cloudinary.com/cae67/image/upload/v1628184306/fakebook_shop/grey_shoe_jk7iuz.jpg">
+
+</body>
+</html>
